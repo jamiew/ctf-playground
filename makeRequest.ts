@@ -35,16 +35,19 @@ http://127.0.0.1 /:2020
 // http://foo@127.0.0.1@google.com/
 // http://foo@evil.com:80@google.com/
 
-console.log(makeRequest("http://foo@evil.com:80@google.com/"));
+// console.log(makeRequest("http://foo@evil.com:80@google.com/"));
 
-console.log(makeRequest("http://%3Asupersecret@localhost:1010/?confirm=yes"));
+// console.log(makeRequest("http://%3Asupersecret@localhost:1010/?confirm=yes"));
 
-//console.log(makeRequest("https://google.com@ http://%3Asupersecret@localhost:1010/?confirm=yes"));
+// console.log(makeRequest("https://google.com@ http://%3Asupersecret@localhost:1010/?confirm=yes"));
 
-//console.log(makeRequest("ftp:// &@http://%3Asupersecret@localhost:1010/?confirm=yes"));
+// console.log(makeRequest("ftp:// &@http://%3Asupersecret@localhost:1010/?confirm=yes"));
 
-console.log(makeRequest("https://example.com &@http://%3Asupersecret@localhost:1010/?confirm=yes"));
+// console.log(makeRequest("https://example.com &@http://%3Asupersecret@localhost:1010/?confirm=yes"));
 
-console.log(makeRequest("base64://aHR0cDovLyUzQXN1cGVyc2VjcmV0QGxvY2FsaG9zdDoxMDEwLz9jb25maXJtPXllcw== &@https://example.com"));
+// console.log(makeRequest("base64://aHR0cDovLyUzQXN1cGVyc2VjcmV0QGxvY2FsaG9zdDoxMDEwLz9jb25maXJtPXllcw== &@https://example.com"));
 
+// TODO muck with the scheme parsing
+// ://http:// ????
 
+console.log(new URI( "://http://localhost:1010" ));
