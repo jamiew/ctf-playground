@@ -24,6 +24,11 @@ export async function makeRequest(uriString: string) {
 // console.log(makeRequest("http://0.0.0.0"));
 // console.log(makeRequest("https://127.0.0.1:1010"));
 
+/*
+http://127.0.0.1 / &@127.0.0.1:2020
+http://127.0.0.1 /:2020
+*/
+
 // http://127.0.0.1:11211#@google.com:80/
 // http://ß.orange.tw/
 // http://127.0.0.1:6379/\r\nSLAVEOF orange.tw 6379\r\n
