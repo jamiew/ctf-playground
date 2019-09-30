@@ -15,8 +15,22 @@ Installing/Running
 
 ```
 npm install -g typescript
+```
+
+To run
+
+```
 tsc makeRequest.ts && node makeRequest.js
 ```
+
+or aliased as
+
+```
+npm run ssrf
+```
+
+Cool
+----
 
 Dani's devtools request filter that I keep forgetting:
 
