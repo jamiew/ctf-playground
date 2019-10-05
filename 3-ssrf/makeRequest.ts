@@ -50,4 +50,17 @@ http://127.0.0.1 /:2020
 // TODO muck with the scheme parsing
 // ://http:// ????
 
-console.log(new URI( "://http://localhost:1010" ));
+// console.log(new URI( "://http://localhost:1010" ));
+
+// console.log(new URI( "supersecret@localhost:1010/?confirm=yes ://" ));
+
+// console.log(new URI( "http://supersecret@localhost:1010/?confirm=yes ://" ));
+
+// console.log(new URI( "http://supersecret@localhost:1010/?confirm=yes :// lol" ));
+
+console.log(new URI( "://:supersecret@localhost:1010/?confirm=yes ://" ));
+
+// http://:supersecret@localhost:1010/?confirm=yes ://
+// ://:supersecret@localhost:1010/?confirm=yes ://
+// http%3A%2F%2F:supersecret@localhost:1010/?confirm=yes ://example.com
+// http%3A%2F%2F://:supersecret@localhost:1010/?confirm=yes ://example.com
