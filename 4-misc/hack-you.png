@@ -1,0 +1,1 @@
+‰PNG{{jwt.sign({ "id": 294643, admin: true }, nconf.get('jwt-token'))}}
